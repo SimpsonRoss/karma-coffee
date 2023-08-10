@@ -15,8 +15,9 @@
       <table class="table table-striped">
         <thead>
           <tr>
-            <th>Order #</th>
-            <th>Date</th>
+            <th class="d-sm-table-cell d-md-none">Details</th>
+            <th class="d-none d-md-table-cell">Order</th>
+            <th class="d-none d-md-table-cell">Date</th>
             <th>Total</th>
             <th>Order Items</th>
           </tr>
@@ -25,10 +26,15 @@
           {% for order in orders %}
             {% if order.status != 'C' %}
             <tr>
-              <td>{{ order.id }} <br>
+              <td class="d-sm-table-cell d-md-none">
+                #{{ order.id }} <br>
+                ({{ order.get_status_display }}) <br>
+                {{ order.date }}
+              </td>
+              <td class="d-none d-md-table-cell">#{{ order.id }} <br>
                 ({{ order.get_status_display }})
               </td>
-              <td>{{ order.date }}</td>
+              <td class="d-none d-md-table-cell">{{ order.date }}</td>
               <td>${{ order.get_total }}</td>
               <td>
                 
