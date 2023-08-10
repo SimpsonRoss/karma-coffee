@@ -20,7 +20,7 @@ from .forms import ReviewForm
 
 stripe.api_key = settings.STRIPE_API_KEY_HIDDEN
 
-YOUR_DOMAIN = 'https://karma-coffee-abe41bfb39f9.herokuapp.com'
+YOUR_DOMAIN = 'https://karmacoffee-0075707e53e0.herokuapp.com'
 
 # Create your views here.
 
