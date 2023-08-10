@@ -6,8 +6,8 @@
   <!-- Mobile Berry Image -->
   <div class="d-block d-lg-none text-center mb-5 position-relative">
     <img src="static/media/berry.webp" alt="Berry Image" class="img-fluid">
-    <br>
-    <h1 class="display-1 mt-3 pb-4 font-weight-normal d-block d-md-none position-absolute top-50 start-50 translate-middle" style="font-size: 4rem; color: white;">SIP KINDLY</h1>
+    <p class="lead text-center mt-3" style="font-size: 5vmin;"><strong>Ethical Coffee from Around the World</strong></p>
+    <h1 class="display-1 font-weight-normal d-block d-md-none" style="font-size: 20vmin; color: black;">SIP KINDLY</h1>
   </div>
 
   <div class="row mt-5">
@@ -27,6 +27,9 @@
     </div>
   </div>
 
+
+
+
   <div id="productCarousel" class="carousel carousel-dark slide mt-5">
     <div class="carousel-inner">
       {% for product in products %}
@@ -44,8 +47,9 @@
               <img src="{{ product.image.url }}" class="card-img-top" alt="Product image" />
               <div class="card-body">
                 <h5 class="card-title">{{ product.name }}</h5>
-                <p class="card-text">${{ product.price }}</p>
+                
                 <!-- Hide product flavour on mobile -->
+                <p class="card-text d-none d-md-block">${{ product.price }}</p>
                 <p class="card-text d-none d-md-block">{{ product.flavour }}</p>
               </div>
             </a>
