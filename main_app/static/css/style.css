@@ -179,3 +179,8 @@ div.review-delete-button {
     padding: 0 1rem 0 2rem;
   }
 }
+
+.navbar-toggler {
+  border: none !important;
+  outline: none !important;
+}
