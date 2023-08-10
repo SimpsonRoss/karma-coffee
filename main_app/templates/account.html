@@ -17,28 +17,30 @@
           <tr>
             <th>Order #</th>
             <th>Date</th>
-            <th>Status</th>
             <th>Total</th>
             <th>Order Items</th>
           </tr>
         </thead>
         <tbody>
           {% for order in orders %}
+            {% if order.status != 'C' %}
             <tr>
-              <td>{{ order.id }}</td>
+              <td>{{ order.id }} <br>
+                ({{ order.get_status_display }})
+              </td>
               <td>{{ order.date }}</td>
-              <td>{{ order.get_status_display }}</td>
               <td>${{ order.get_total }}</td>
               <td>
-                <ul>
+                
                   {% for item in order.orderitem_set.all %}
-                      <li>
-                          {{ item.product.name }} ({{ item.quantity }}) - ${{ item.product.price }}
-                      </li>
+                      
+                  • {{ item.product.name }} ({{ item.quantity }}) - ${{ item.product.price }} <br>
+                     
                   {% endfor %}
-                </ul>
+                
               </td>
             </tr>
+            {% endif %}
           {% endfor %}
         </tbody>
       </table>
