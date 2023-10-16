@@ -206,9 +206,9 @@ Having a combined aesthetic vision before we started, and understanding the user
 
 ## Biggest Challenge
 
-I found the toughest part of this challenge was learning about GitHub management and having to troubleshoot commit issues and conflicts. Conversely it was what I enjoyed learning the most, and it felt empowering to learn more about how software development teams work together fluidly.
+- I found the toughest part of this challenge was learning about GitHub management and having to troubleshoot commit issues and conflicts. Conversely it was what I enjoyed learning the most, and it felt empowering to learn more about how software development teams work together fluidly.
 
-Secondly, the most challenging aspect in the code was figuring out how we were going to create the order model and differentiate between it's different stages from Cart -> Paid -> Shipped -> Delivered and how that would alter the user experience at each step.
+- Secondly, the most challenging aspect in the code was figuring out how we were going to create the order model and differentiate between it's different stages from Cart -> Paid -> Shipped -> Delivered and how that would alter the user experience at each step.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
