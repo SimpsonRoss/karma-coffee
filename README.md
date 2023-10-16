@@ -34,7 +34,7 @@ The website features a landing page with information about the product and compa
 
 From the 'Coffee' page customers can use a filter menu to find coffee by roast type or country of origin. When they click to see a product each product page features a product image, information on flavour notes, and a review section where they can add a review of the product once they've purchased and their delivery is confirmed. On the product page they can select a quantity and product type and add to cart.
 
-The cart is fully editable and there they can amend quanities or remove items before heading to checkout. For the checkout I chose to use the Stripe API, and redirect to an order confirmation page (or an cancel page depending on the outcome of payment) from where a user can continue shopping or view their order via the account page. The account page allows users to track past orders and see delivery updates, as well as amend their personal details.
+The cart is fully editable and there they can amend quanities or remove items before heading to checkout. For the checkout I chose to use the Stripe API, and redirect to an order confirmation page (or a cancel page depending on the outcome of payment) from where a user can continue shopping or view their order via the account page. The account page allows users to track past orders and see delivery updates, as well as amend their personal details.
 
 ## My Contribution
 
@@ -45,16 +45,16 @@ For this project I built:
   <li>About page</li>
   <li>Account page</li>
   <li>Checkout page</li>
-  <li>Cart Page</li>
+  <li>Cart page</li>
   <li>Add to cart modal</li>
   <li>Collapsible menus on Coffee page</li>
 </ul>
 and I also:
 <ul>
   <li>Managed the GitHub repo</li>
-  <li>Built our Trello and ran rituals as scrum master</li>
-  <li>Full Mobile responsivity</li>
-  <li>Logo and UX Design</li>
+  <li>Built our Trello and ran rituals as Scrum master</li>
+  <li>Full mobile responsivity</li>
+  <li>Logo and UX design</li>
 </ul>
 
 **Built With**
@@ -93,9 +93,9 @@ The fullstack application was made using these tools:
 **Coffee Product Page**
 
 - If you'd like to filter the products, simply:
-  - Click 'Origin' to filter down the products by origins(Colombia, Ethiopia, Brazil, India).
-  - Click 'Origin' to filter down the products by roast level(Dark, Medium, Light).
-- Click specific item to view the product in more detail.
+  - Click 'Origin' to filter down the products by origins.
+  - Click 'Origin' to filter down the products by roast level.
+- Click on a specific item to view the product in more detail.
 
 **Product Detail Page**
 
@@ -111,7 +111,7 @@ The fullstack application was made using these tools:
 
 **Payment Page**
 
-- Via Stripe, you can check your final order details and have your shipping/payment details set up.
+- Via Stripe, you can input your delivery address and add card details, to pay.
 - Here are come test card details in order to complete stripe checkout
 
   - Test Card: For successful payment
@@ -129,7 +129,7 @@ The fullstack application was made using these tools:
 **Account Page**
 
 - Check your order history.
-- Update your account details.
+- Update your personal account details.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -145,7 +145,7 @@ This was our original ERD for the planning of the project, in actual fact we did
 
 ## Wireframe
 
-Drawing inspiration from a few different ecommerce and coffee websites that resonated with me and the team, I created these Wireframes to help guide our direction aesthetically, and it also helped us think about the achitecture of the software itself.
+Drawing inspiration from a few different ecommerce and coffee websites that resonated with me and the team, I created these Wireframes to help guide our direction aesthetically, and it also helped us think about the architecture of the software itself.
 
 ![Wireframe for Karma Coffee Website](https://github.com/SimpsonRoss/karma-coffee/assets/93015253/d37c1587-dde5-43fc-a373-57df903208fd)
 
@@ -155,7 +155,7 @@ To build a fullstack web application using Python, Django, and postgreSQL, and u
 
 **Landing Page**
 
-Users will land on a home page that highlights who the company is, what we do, and encourages them to enter the purchase funnel through calls to action.
+- Users will land on a home page that highlights who the company is, what we do, and encourages them to enter the purchase funnel through calls to action.
 
 **Product Selection and Filters**
 
@@ -167,7 +167,7 @@ Users will land on a home page that highlights who the company is, what we do, a
 
 **Profile Page**
 
-- The user will have a profile page where they can see all of their past orders, and update acccount details.
+- The user will have a account page where they can see all of their past orders, and update acccount details.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -175,28 +175,28 @@ Users will land on a home page that highlights who the company is, what we do, a
 
 - Have at least 2 data entities in addition to the User Model - one entity that represents the main functional idea for your app and another with a One:Many or Many:Many relationship with that main entity.
 - Use OAuth authentication.
-- Implement basic authorization that restricts access to features that need a logged in user in order to work
-- Have full-CRUD data operations somewhere within the app's features.
+- Implement basic authorisation that restricts access to features that need a logged in user in order to work.
+- Have full-CRUD (Create Read Update Delete) data operations somewhere within the app's features.
 - Have a consistent and polished user interface.
-- Be deployed online via Heroku
+- Be deployed online via Heroku.
 
 ## MVP - Minimum Viable Product
 
 - [x] AAU, I want a way to login.
 - [x] AAU, I want to see the products and product details.
 - [x] AAU, I want to add items in the basket, and edit, delete the items in the basket.
-- [x] AAU, I want to purchase products.
+- [x] AAU, I want to be able to purchase products.
 - [x] AAU, I want to be able to leave and delete reviews for the products I purchased.
 
 ## NTH - Nice to have
 
-- [x] AAU, I want to be able to filter the products.
-- [x] AAU, I'd like to see payment/order confirmation.
-- [x] AAU, I'd like to see my order history.
-- [x] AAU, I'd like to read about the company.
+- [x] AAU, I want to be able to filter the products and find what I want.
+- [x] AAU, I want to see payment/order confirmation, so I know I've paid.
+- [x] AAU, I'd like to see my order history, and track delivery.
+- [x] AAU, I'd like to read more about the company.
 - [x] AAU, I'd like to be able to log in with Google.
 - [ ] AAU, I want to be able to search specific item.
-- [ ] AAU, I want to be able to subscribe.
+- [ ] AAU, I want to be able to subscribe to an email newsletter.
 
 ## Actual Project Screenshots
 
@@ -206,7 +206,7 @@ Having a combined aesthetic vision before we started, and understanding the user
 
 ## Biggest Challenge
 
-I found the toughest part of this challenge was learning about GitHub management and having to troubleshoot commit issues and conflicts. Conversely it was what I enjoyed learning the most, and it felt empowering to overcome the seemingly impossible problems.
+I found the toughest part of this challenge was learning about GitHub management and having to troubleshoot commit issues and conflicts. Conversely it was what I enjoyed learning the most, and it felt empowering to learn more about how software development teams work together fluidly.
 
 Secondly, the most challenging aspect in the code was figuring out how we were going to create the order model and differentiate between it's different stages from Cart -> Paid -> Shipped -> Delivered and how that would alter the user experience at each step.
 
@@ -230,38 +230,38 @@ Secondly, the most challenging aspect in the code was figuring out how we were g
 
 ## Wins
 
-- **Working as a team, comitting to one project**.
-  This was the first time I'd worked on a project from start to finish with a group of other developers. We had to overcome a lot of issues, and work tirelessly to resolve conflicts and draw diagrams of commits and rebases to form a mental picture of how we working. In the end, working out these issues together became the task and the software was almost secondary.
+- **Working as a team, comitting to one project:**
+  This was the first time I'd worked on a project from start to finish with a group of other developers. We had to overcome a lot of issues, and work tirelessly to resolve conflicts and draw diagrams of commits and rebases to form a mental picture of how we were working. In the end, working out these issues together became the task and the software was almost secondary.
 
-- **Agile Software development**
-  It was incredibly rewarding being able to go from ideation to a finished product in just one week. I facilitated a group planning session based on learnings from the bookes Agile Samurai and the Secrets of Facilitation. We managed to find a key area that we were all passionate about and take everyones ideas into consideration so that we were all equally bought into the product. We had daily standups and worked from a combined product backlog, that allowed transparency and prioritisation that was key within our short timeframe.
+- **Agile software development:**
+  It was incredibly rewarding being able to go from ideation to a finished product in just one week. I facilitated a group planning session based on learnings from the bookes Agile Samurai and the Secrets of Facilitation. We managed to find a key area that we were all passionate about and take everyones ideas into consideration so that we were all equally bought into the product. We had daily standups and worked from a combined product backlog, that allowed transparency and prioritisation that was key with our short timeframe.
 
 ## Mistakes / Bugs
 
-- **GitHub process becoming convoluted**
-  Early on we followed a process whereby we'd create superfluous branches locally and on GitHub, and after consulting a senior software engineering manager from Spotify we learnt more about rebasing and how teams work together in larger tech companies. we adapted our workflow and were able to have much more freedom and autonomy when writing code, without worrying about conflicts.
+- **GitHub process becoming convoluted:**
+  Early on we followed a process whereby we'd create superfluous branches locally and on GitHub, and after consulting a senior software engineering manager from Spotify we learnt more about rebasing and how teams work together in larger tech companies. We adapted our workflow and were able to have much more freedom and autonomy when writing code, without worrying about conflicts.
 
-- **No Edit Functionality on Reviews**
+- **No edit functionality on reviews:**
   This was just below the priority cut off point when it came to functionality we had time to execute. It's something we'd like to add in the future.
 
-- **Modal issues**
-  There is a still a lingering success message that can trigger the add to cart modal to show when a user clicks into the product detail page. This is something I'm looking to resolved shortly.
+- **Modal issues:**
+  There is a still a lingering success message that can trigger the add to cart modal to show when a user clicks into the product detail page. This is something I'm looking to resolve shortly.
 
-- **Pair programming**
-  We were reluctant to pair program at first and I think that led to more blockers for team members. The execution of the log in feature took longer than it needed too, and I think we could have fixed that early on with better communication and more collaboration on features.
+- **Pair programming:**
+  We were reluctant to pair program at first and that led to more blockers for team members. The execution of the log in/ sign up feature took longer than it needed too, and I think we could have fixed that early on with better communication and more collaboration on features.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Key Learnings
 
-- **GitHub deployment communication**
+- **GitHub deployment communication:**
   Getting on the same page with ways of working early on, and ensuring you all fully understand the 'what' and 'why' of your workflow is something we learned the importance of. Some more time spent determining this, sharing diagrams and being honest about our understanding could have saved some time further into the project.
 
-- **Mobile first**
+- **Mobile first:**
   We regretted not designing for mobile first, due to the prevalance of mobile browsing now. I retroactively managed to make the site mobile responsive, but it was much harder and led to a lesser experience than on Desktop.
 
-- **Definition of done**
-  Defining a definition of done, clearly, so that we all knew what was expected before marking something as completed in the product backlog could have prevented some smaller tasks from falling into a grey area, or any tech debt building up.
+- **Definition of done:**
+  Defining a definition of done, clearly, so that we all knew what was expected before marking something as completed in the product backlog could have prevented some smaller tasks from falling into a grey area, or tech debt building up.
 
 <!-- CONTRIBUTING -->
 
